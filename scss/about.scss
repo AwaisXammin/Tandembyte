@@ -1,0 +1,54 @@
+.about-section {
+  background: url("../images/About-Background.png");
+  background-size: cover;
+  background-position-y: -75px;
+  .responsive-mode {
+    display: none;
+    @media (max-width: 525px) {
+      display: block;
+    }
+  }
+  @media (max-width: 525px) {
+    background: linear-gradient(
+        288.61deg,
+        #24a3d6 1.88%,
+        #235977 29.93%,
+        #23385f 43.39%,
+        #23314f 61.94%
+      ),
+      #23314f;
+  }
+}
+
+.studio-section {
+  &::before {
+    height: 100% !important;
+  }
+  .section-heading {
+    padding-top: 55px;
+    text-align: center;
+    @media (max-width: 777px) {
+      padding-top: 0;
+    }
+  }
+  .section-text {
+    padding-bottom: 150px;
+    text-align: center;
+    width: 46%;
+    margin: 0 auto;
+    @media (max-width: 777px) {
+      width: 100%;
+      padding-bottom: 85px;
+    }
+  }
+}
+
+.content-section {
+  .container {
+    .row {
+      .col-md-6 {
+        padding: 0 25px;
+      }
+    }
+  }
+}

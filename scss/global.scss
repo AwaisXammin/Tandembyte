@@ -1,0 +1,117 @@
+body {
+  font-family: $body-font;
+  color: $black;
+}
+
+/*--### SECTION HEADING ###--*/
+.section-heading {
+  font-family: $heading-font;
+
+  h1 {
+    font-weight: 500;
+    font-size: 60px;
+    margin-bottom: 48px;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 48px;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 40px;
+  }
+}
+
+/*--### MEDIUM TEXT ###--*/
+.medium-text {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+/*--### SECTION TEXT ###--*/
+.section-text {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/*--### BUTTON ###--*/
+section {
+  .button-wrapper {
+    margin-top: 60px;
+  }
+}
+.btn {
+  padding: 12px 32px;
+  border-radius: 4px;
+  transition: 0.4s all;
+
+  /* White */
+  &.white {
+    &.outline {
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: $white;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+
+  /* Yellow */
+  &.yellow {
+    background-color: $primary;
+    border: 1px solid $primary;
+    color: $white;
+
+    &:hover {
+      background-color: transparent;
+      color: $primary;
+    }
+  }
+
+  /* Dark */
+  &.dark {
+    background-color: $black;
+    border: 1px solid $black;
+    color: $white;
+
+    &:hover {
+      background-color: transparent;
+      color: $black;
+    }
+  }
+}
+
+/*--### RESPONSIVE ###--*/
+@media (max-width: 991px) {
+  .section-heading h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .row {
+    margin: 0;
+  }
+}
+
+@media (max-width: 475px) {
+  .medium-text {
+    font-size: 20px;
+  }
+  .section-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  .section-heading h2 {
+    font-size: 38px;
+  }
+  .section-heading h3 {
+    font-size: 30px;
+  }
+}

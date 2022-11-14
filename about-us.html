@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="images/icons/favicon.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+
+    <!--##FontAwesome##-->
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    /></noscript>
+
+    <!--##Stylesheet##-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--##LazyLoadSizes##-->
+    <script src="js/lazysizes.min.js"></script>
+
+    <!--### Google Fonts ###-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Teko:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>TANDEMBYTE</title>
+  </head>
+  <body>
+    <!--### HEADER ###-->
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a
+            class="navbar-brand"
+            href="index.html"
+            data-aos="fade-down"
+            data-aos-delay="100"
+          >
+            <img
+              src="images/logo.png"
+              alt="Logo"
+              class="img-responsive"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            />
+          </a>
+
+          <!--# Button Wrapper #-->
+          <div class="button-wrapper visible-mobile">
+            <a href="#contact" class="btn white outline">Contact</a>
+          </div>
+
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-wrapper">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a href="about-us.html">About Us</a>
+                </li>
+              </ul>
+
+              <!--# Button Wrapper #-->
+              <div class="button-wrapper visible-desktop">
+                <a href="#contact" class="btn white outline">Contact</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--### BANNER SECTION ###-->
+    <section class="banner-section about-section">
+      <div class="container">
+        <div class="row">
+          <!--## Content ##-->
+          <div class="col-md-12 col-sm-12 col-12">
+            <div class="content">
+              <!--# Section Heading #-->
+              <div
+                class="section-heading"
+                data-aos="fade-in"
+                data-aos-delay="300"
+              >
+                <h1 style="text-align: center">About Us</h1>
+              </div>
+            </div>
+          </div>
+          <!--## Image ##-->
+          <div class="col-md-6 col-sm-6 col-12 responsive-mode">
+            <div class="image" data-aos="fade-left" data-aos-delay="500">
+              <img
+                src="images/About-bg.png"
+                alt="Banner Image"
+                class="img-responsive"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--### STUDIO SECTION ###-->
+    <section class="studio-section">
+      <div class="container">
+        <!--## ICONS ROW ##-->
+        <ul class="icons-row">
+          <li data-aos="fade-in" data-aos-delay="100">
+            <svg
+              width="38"
+              height="38"
+              viewBox="0 0 38 38"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.625 0.875V18.5117H18.1797V0.875H0.625ZM19.7383 0.875V18.5117H37.375V0.875H19.7383ZM0.625 20.0703V37.625H18.1797V20.0703H0.625ZM19.7383 20.0703V37.625H37.375V20.0703H19.7383Z"
+                fill="#23314F"
+              />
+            </svg>
+          </li>
+          <li data-aos="fade-in" data-aos-delay="200">
+            <svg
+              width="54"
+              height="33"
+              viewBox="0 0 54 33"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.5156 11.9844V6.24219C15.5156 6.16016 15.5156 5.91406 15.5156 5.83203C15.5156 4.60156 14.8594 2.87891 14.0391 1.97656C13.0547 1.15625 11.332 0.5 10.0195 0.5C9.85547 0.5 9.60938 0.5 9.52734 0.582031C6.98438 0.5 4.52344 1.48438 4.11328 2.05859C3.94922 2.22266 3.70312 4.02734 4.35938 4.02734C4.52344 4.02734 4.60547 4.10938 5.17969 3.78125C7.39453 2.96094 8.78906 2.96094 8.95312 2.96094C11.4141 2.71484 12.8906 4.35547 12.6445 6.57031V7.88281C10.5938 7.39062 9.36328 7.30859 8.78906 7.30859C5.75391 7.14453 2.80078 9.11328 2.96484 12.2305C2.80078 16.0859 6.41016 16.9062 7.72266 16.9062C7.80469 16.9062 7.80469 16.9062 7.80469 16.9062C9.52734 16.9062 11.8242 15.7578 12.8906 14.4453C13.875 16.7422 14.5312 16.5781 14.5312 16.5781C14.6953 16.5781 14.8594 16.4961 15.0234 16.4141L16.0898 15.6758C16.2539 15.5938 16.418 15.3477 16.418 15.1836C16.418 14.6094 15.4336 13.7891 15.5156 11.9844ZM8.37891 14.6094C6.90234 14.6914 5.83594 13.4609 6 12.0664C5.83594 9.93359 8.13281 9.35938 9.36328 9.44141C10.6758 9.44141 11.8242 9.6875 12.6445 9.85156C12.6445 10.7539 12.6445 11.2461 12.4805 12.0664C12.2344 12.9688 11.0859 14.5273 8.37891 14.6094ZM22.4062 16.4961H23.9648C24.8672 16.5781 24.9492 15.6758 24.9492 15.5938L27.6562 4.35547L30.3633 15.5938C30.4453 15.6758 30.5273 16.5781 31.4297 16.4961H32.9883C33.6445 16.5781 33.8906 16.0859 33.9727 15.6758C38.6484 0.828125 38.3203 1.89453 38.3203 1.73047C38.4023 0.910156 37.9922 0.992188 37.9102 0.992188H36.2695C35.4492 0.910156 35.2852 1.64844 35.2031 1.89453L32.25 13.543L29.4609 1.89453C29.3789 0.992188 28.6406 0.992188 28.4766 0.992188H27C26.1797 0.910156 26.0156 1.56641 26.0156 1.8125L23.2266 13.3789L20.3555 1.8125C20.2734 1.48438 20.0273 0.910156 19.2891 0.992188H17.4844C17.3203 0.992188 17.1562 1.15625 17.1562 1.40234C17.1562 1.64844 17.2383 1.89453 17.3203 2.14062L21.4219 15.6758C21.5039 16.0859 21.832 16.5781 22.4062 16.4961ZM44.8828 16.9883C44.9648 16.9883 48.9844 17.2344 50.543 14.1172C50.8711 13.543 51.6094 11.4102 50.2148 9.60547C48.9844 8.21094 48 8.04688 45.0469 7.14453C44.8008 7.0625 42.5859 6.48828 42.5859 4.92969C42.5039 2.96094 45.2109 2.87891 45.7031 2.87891C48 2.87891 49.1484 3.69922 49.8047 3.78125C50.0508 3.78125 50.1328 3.61719 50.1328 3.20703V2.38672C50.2148 2.22266 50.1328 1.97656 50.0508 1.8125C49.2305 0.910156 46.5234 0.582031 45.457 0.582031C41.7656 0.5 39.7148 2.79688 39.7148 5.17578C39.7969 8.29297 42.9961 9.35938 43.3242 9.44141C46.4414 10.4258 46.8516 10.4258 47.6719 11.1641C48.4102 11.9023 48.3281 13.3789 47.2617 14.0352C46.9336 14.1992 45.6211 15.0195 42.5859 14.3633C41.6016 14.1992 41.1094 13.9531 40.2891 13.625C40.043 13.543 39.5508 13.3789 39.5508 14.1172V14.9375V15.0195C39.5508 15.3477 39.7969 15.7578 40.207 15.9219C42.0938 16.9062 44.3906 16.9883 44.8828 16.9883ZM48.1641 25.5195C49.1484 24.8633 48.3281 23.7969 47.3438 24.207C42.0938 26.4219 33.2344 28.2266 27.4922 28.3086C19.7812 28.3086 8.21484 25.1914 1.57031 21.3359C0.914062 21.0078 0.421875 21.6641 0.914062 22.1562C6.98438 27.6523 18.5508 32.082 26.7539 32.082C26.7539 32.082 26.918 32.082 27 32.082C34.0547 32.082 42.4219 29.7852 48.1641 25.5195ZM50.543 22.8125C51.2812 23.7969 49.7227 27.6523 49.0664 29.375C48.8203 29.9492 49.3125 30.1133 49.8047 29.7031C52.8398 27.1602 53.6602 21.7461 53.0039 20.9258C52.4297 20.1875 47.0156 19.5312 43.7344 21.8281C43.2422 22.1562 43.3242 22.6484 43.8164 22.5664C45.7031 22.4023 49.8047 21.9102 50.543 22.8125Z"
+                fill="#23314F"
+              />
+            </svg>
+          </li>
+          <li data-aos="fade-in" data-aos-delay="300">
+            <svg
+              width="49"
+              height="31"
+              viewBox="0 0 49 31"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.9062 13.7734C22.4492 12.4609 23.8438 10.5742 23.8438 7.70312C23.8438 1.87891 19.4961 0.484375 14.5742 0.484375H0.875V29.5234H14.9023C20.2344 29.5234 25.1562 26.9805 25.1562 21.0742C25.1562 17.4648 23.4336 14.7578 19.9062 13.7734ZM7.19141 5.40625H13.2617C15.5586 5.40625 17.6094 6.0625 17.6094 8.76953C17.6094 11.2305 15.9688 12.2148 13.6719 12.2148H7.19141V5.40625ZM14.082 24.6016H7.19141V16.5625H14.1641C17.0352 16.5625 18.7578 17.793 18.7578 20.7461C18.7578 23.6992 16.625 24.6016 14.082 24.6016ZM43.4492 4.83203V1.96094H31.7188V4.83203H43.4492ZM48.125 19.3516C48.125 13.1172 44.4336 7.86719 37.8711 7.86719C31.3906 7.86719 27.043 12.707 27.043 19.0234C27.043 25.5859 31.2266 30.0977 37.8711 30.0977C42.875 30.0977 46.1562 27.8008 47.7148 23.043H42.6289C42.0547 24.8477 39.7578 25.75 38.0352 25.75C34.6719 25.75 32.8672 23.7812 32.8672 20.418H48.043C48.043 20.0898 48.125 19.6797 48.125 19.3516ZM32.8672 16.7266C33.0312 14.0195 34.918 12.2969 37.625 12.2969C40.5781 12.2969 42.0547 13.9375 42.3008 16.7266H32.8672Z"
+                fill="#23314F"
+              />
+            </svg>
+          </li>
+          <li data-aos="fade-in" data-aos-delay="400">
+            <svg
+              width="41"
+              height="42"
+              viewBox="0 0 41 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M40.5156 21.7422C40.5156 20.4297 40.3516 19.4453 40.1875 18.3789H20.8281V25.3516H32.3125C31.9023 28.3867 28.8672 34.1289 20.8281 34.1289C13.8555 34.1289 8.19531 28.3867 8.19531 21.25C8.19531 9.84766 21.6484 4.59766 28.8672 11.5703L34.4453 6.23828C30.918 2.95703 26.2422 0.90625 20.8281 0.90625C9.50781 0.90625 0.484375 10.0117 0.484375 21.25C0.484375 32.5703 9.50781 41.5938 20.8281 41.5938C32.5586 41.5938 40.5156 33.3906 40.5156 21.7422Z"
+                fill="#23314F"
+              />
+            </svg>
+          </li>
+          <li data-aos="fade-in" data-aos-delay="500">
+            <svg
+              width="40"
+              height="38"
+              viewBox="0 0 40 38"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M39.875 0.875H6.40625L5.09375 7.60156H32.4102L31.5898 11.9492H4.19141L2.87891 18.6758H30.1953L28.7188 26.6328L17.7266 30.3242L8.12891 26.6328L8.78516 23.3516H2.05859L0.5 31.0625L16.25 37.625L34.625 31.0625L39.875 0.875Z"
+                fill="#23314F"
+              />
+            </svg>
+          </li>
+          <li data-aos="fade-in" data-aos-delay="600">
+            <svg
+              width="54"
+              height="13"
+              viewBox="0 0 54 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.9766 4.37891C17.4844 2.32812 15.7617 0.933594 13.793 0.933594H10.7578C10.1836 0.933594 9.69141 1.34375 9.60938 1.83594L6.73828 12.5H8.70703C9.28125 12.5 9.77344 12.1719 9.9375 11.6797L11.9883 3.80469H13.6289C14.3672 3.80469 14.9414 4.29688 15.1055 5.03516C15.3516 5.9375 14.6953 6.83984 13.6289 6.83984H12.8086C12.2344 6.83984 11.7422 7.25 11.6602 7.74219L11.0859 9.71094H13.7109C16.7461 9.71094 18.4688 6.75781 17.9766 4.37891ZM5.09766 6.67578H6.65625C7.23047 6.67578 7.64062 6.26562 7.80469 5.77344L8.29688 3.80469H5.01562C3.21094 3.80469 1.48828 4.95312 0.832031 7.16797C0.175781 9.95703 2.22656 12.5 5.01562 12.5H6L6.57422 10.3672C6.65625 10.0391 6.41016 9.71094 6.08203 9.71094H5.09766C3.12891 9.71094 3.04688 6.67578 5.09766 6.67578ZM25.4414 3.80469H19.043L18.7148 4.87109C18.5508 5.69141 19.125 6.42969 19.9453 6.42969H24.6211C24.9492 6.42969 24.8672 6.75781 24.7852 6.83984L24.1289 9.46484C24.0469 9.54688 24.0469 9.875 23.6367 9.875H20.7656C20.3555 9.875 20.3555 9.21875 20.7656 9.21875H22.5703C23.1445 9.21875 23.5547 8.89062 23.7188 8.31641L24.0469 7.25H20.0273C16.8281 7.25 16.5 12.5 19.9453 12.5H24.7031C25.6055 12.5 26.4258 11.9258 26.5898 11.0234L27.7383 6.83984C28.1484 5.19922 27 3.80469 25.4414 3.80469ZM52.6758 0.933594H51.1172C50.707 0.933594 50.3789 1.26172 50.2148 1.58984L47.3438 12.5C48.9844 12.5 50.625 11.4336 51.0352 9.71094L53.168 1.67188C53.25 1.26172 53.0039 0.933594 52.6758 0.933594ZM33.2344 3.80469H29.2969L27.1641 11.8438C27.082 12.2539 27.3281 12.582 27.6562 12.582H29.2148C29.625 12.582 29.9531 12.3359 30.1172 11.9258L31.5117 6.67578H33.1523C34.1367 6.67578 34.875 7.66016 34.6289 8.5625L33.7266 11.8438C33.6445 12.1719 33.8906 12.5 34.2188 12.5H35.8594C36.1875 12.5 36.5977 12.3359 36.6797 11.9258L37.418 9.21875C38.1562 6.42969 36.1055 3.80469 33.2344 3.80469ZM41.3555 9.95703C41.0273 9.95703 40.8633 9.62891 40.9453 9.38281L41.6016 6.92188C41.6016 6.59375 41.8477 6.42969 42.1758 6.42969H44.8828C45.1289 6.42969 45.293 6.59375 45.2109 6.83984L45.1289 7.08594C45.1289 7.25 45.0469 7.33203 44.8828 7.33203H43.0781C42.5039 7.33203 42.0117 7.66016 41.9297 8.23438L41.6016 9.30078H46.0312C46.8516 9.30078 47.6719 8.72656 47.918 7.82422L48.1641 6.83984C48.5742 5.28125 47.4258 3.80469 45.8672 3.80469H41.9297C40.5352 3.80469 39.2227 4.78906 38.8125 6.26562L37.9102 9.54688C37.5 10.9414 38.5664 12.5 40.207 12.5H45.7031C46.2773 12.5 46.6875 12.1719 46.8516 11.6797L47.3438 9.95703H41.3555Z"
+                fill="#23314F"
+              />
+            </svg>
+          </li>
+          <li data-aos="fade-in" data-aos-delay="700">
+            <svg
+              width="43"
+              height="30"
+              viewBox="0 0 43 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.1172 3.84766C14.1172 2.53516 13.1328 0.648438 9.6875 0.648438H4.10938L2.38672 7.86719H8.12891C12.7227 7.86719 14.1172 5.81641 14.1172 3.84766ZM24.4531 0.648438H18.875L17.3164 7.86719H23.0586C27.4883 7.86719 28.8008 5.81641 28.8008 3.84766C28.8828 2.53516 27.8984 0.648438 24.4531 0.648438ZM7.71875 11.3945H2.22266L0.5 18.6133H6.24219C10.8359 18.6133 12.1484 16.7266 12.1484 14.5938C12.1484 13.2812 11.1641 11.3945 7.71875 11.3945ZM22.4844 11.3945H16.9883L15.4297 18.6133H21.1719C25.6016 18.6133 26.9141 16.7266 26.9141 14.5938C26.9141 13.2812 25.9297 11.3945 22.4844 11.3945ZM38.0703 6.96484H32.4922L30.9336 14.2656H36.6758C41.1055 14.2656 42.418 12.2969 42.418 10.1641C42.5 8.85156 41.5156 6.96484 38.0703 6.96484ZM35.7734 18.2852H30.1953L28.6367 25.5039H34.3789C38.9727 25.5039 40.1211 23.6172 40.1211 21.4844C40.1211 20.1719 39.2188 18.2852 35.7734 18.2852ZM20.1875 22.6328H14.6914L13.1328 29.9336H18.875C23.4688 29.9336 24.6172 27.8828 24.6172 25.9141C24.6172 24.6016 23.6328 22.6328 20.1875 22.6328Z"
+                fill="#23314F"
+              />
+            </svg>
+          </li>
+        </ul>
+
+        <!--## Section Heading ##-->
+        <div class="section-heading">
+          <h2>Why Choose Us</h2>
+        </div>
+
+        <!--## Section Text ##-->
+        <div class="section-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor
+            neque, mattis adipiscing ultrices venenatis in erat. Rhoncus enim
+            pharetra, sit enim mauris. Morbi in facilisis blandit risus aliquam
+            venenatis. Commodo, dolor curabitur massa fusce porttitor aliquam a
+            integer netus.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--### CONTENT SECTION ###-->
+    <section class="content-section">
+      <div class="container">
+        <!--## ROW ##-->
+        <div class="row">
+          <!--# Content #-->
+          <div class="col-md-6 col-sm-6 col-12">
+            <div class="content">
+              <!-- Section Heading #-->
+              <div
+                class="section-heading"
+                data-aos="fade-in"
+                data-aos-delay="300"
+              >
+                <h3>The Beginning</h3>
+              </div>
+
+              <!-- Section Text -->
+              <div class="section-text" data-aos="fade-in" data-aos-delay="400">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Lobortis vulputate eget egestas rhoncus varius at purus felis,
+                  sit. Lobortis interdum ultricies amet, at. At sed nunc,
+                  condimentum id. Risus, sem tellus sed vitae eu accumsan.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--# Image #-->
+          <div class="col-md-6 col-sm-6 col-12">
+            <div class="image" data-aos="fade-right" data-aos-delay="100">
+              <img
+                src="images/Begining-img.png"
+                alt="Image"
+                class="img-responsive"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!--## ROW ##-->
+        <div class="row">
+          <!--# Image #-->
+          <div class="col-md-6 col-sm-6 col-12">
+            <div class="image" data-aos="fade-right" data-aos-delay="100">
+              <img
+                src="images/Concetroted efforts.png"
+                alt="Image"
+                class="img-responsive"
+              />
+            </div>
+          </div>
+
+          <!--# Content #-->
+          <div class="col-md-6 col-sm-6 col-12">
+            <div class="content">
+              <!-- Section Heading #-->
+              <div
+                class="section-heading"
+                data-aos="fade-in"
+                data-aos-delay="300"
+              >
+                <h3>Concetrated Efforts</h3>
+              </div>
+
+              <!-- Section Text -->
+              <div class="section-text" data-aos="fade-in" data-aos-delay="400">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Lobortis vulputate eget egestas rhoncus varius at purus felis,
+                  sit. Lobortis interdum ultricies amet, at. At sed nunc,
+                  condimentum id. Risus, sem tellus sed vitae eu accumsan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--## ROW ##-->
+        <div class="row">
+          <!--# Content #-->
+          <div class="col-md-6 col-sm-6 col-12">
+            <div class="content">
+              <!-- Section Heading #-->
+              <div
+                class="section-heading"
+                data-aos="fade-in"
+                data-aos-delay="300"
+              >
+                <h3>Just Us</h3>
+              </div>
+
+              <!-- Section Text -->
+              <div class="section-text" data-aos="fade-in" data-aos-delay="400">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Lobortis vulputate eget egestas rhoncus varius at purus felis,
+                  sit. Lobortis interdum ultricies amet, at. At sed nunc,
+                  condimentum id. Risus, sem tellus sed vitae eu accumsan.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--# Image #-->
+          <div class="col-md-6 col-sm-6 col-12">
+            <div class="image" data-aos="fade-right" data-aos-delay="100">
+              <img
+                src="images/Just Us.png"
+                alt="Image"
+                class="img-responsive"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!--## ROW ##-->
+        <div class="row">
+          <!--# Image #-->
+          <div class="col-md-6 col-sm-6 col-12">
+            <div class="image" data-aos="fade-right" data-aos-delay="100">
+              <img
+                src="images/Everything Better.png"
+                alt="Image"
+                class="img-responsive"
+              />
+            </div>
+          </div>
+
+          <!--# Content #-->
+          <div class="col-md-6 col-sm-6 col-12">
+            <div class="content">
+              <!-- Section Heading #-->
+              <div
+                class="section-heading"
+                data-aos="fade-in"
+                data-aos-delay="300"
+              >
+                <h3>Everything Better</h3>
+              </div>
+
+              <!-- Section Text -->
+              <div class="section-text" data-aos="fade-in" data-aos-delay="400">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Lobortis vulputate eget egestas rhoncus varius at purus felis,
+                  sit. Lobortis interdum ultricies amet, at. At sed nunc,
+                  condimentum id. Risus, sem tellus sed vitae eu accumsan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--### ARTICLES SECTION ###-->
+    <section class="articles-section news">
+      <div class="container">
+        <!--# Section Heading #-->
+        <div class="section-heading">
+          <h2>Latest Articles</h2>
+        </div>
+        <div class="row">
+          <!--# Article Box #-->
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="article-box">
+              <a href="#" class="image">
+                <img
+                  src="images/article-image1.png"
+                  alt="Article Image"
+                  class="img-responsive"
+                />
+              </a>
+
+              <div class="content">
+                <a href="#" class="title">
+                  Upgrading To Microsoft Windows Vista Tips
+                </a>
+                <div class="meta-date">
+                  By <b>Abul Hasan Milon</b> | 02 Feb 2019
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--# Article Box #-->
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="article-box">
+              <a href="#" class="image">
+                <img
+                  src="images/article-image2.png"
+                  alt="Article Image"
+                  class="img-responsive"
+                />
+              </a>
+
+              <div class="content">
+                <a href="#" class="title">
+                  Buying Used Electronic Test Equipment What S The Difference
+                  Between ...
+                </a>
+                <div class="meta-date">
+                  By <b>Abul Hasan Milon</b> | 02 Feb 2019
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--# Article Box #-->
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="article-box">
+              <a href="#" class="image">
+                <img
+                  src="images/article-image3.png"
+                  alt="Article Image"
+                  class="img-responsive"
+                />
+              </a>
+
+              <div class="content">
+                <a href="#" class="title">
+                  Las Vegas How To Have Non Gambling Related Fun
+                </a>
+                <div class="meta-date">
+                  By <b>Abul Hasan Milon</b> | 02 Feb 2019
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--# Button Wrapper #-->
+        <div class="button-wrapper">
+          <a href="#" class="btn dark">
+            <span>Show all</span>
+            <svg
+              width="16"
+              height="17"
+              viewBox="0 0 16 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.8 9.29989L13.2688 9.29989L8.9776 13.5911C8.6652 13.9035 8.6652 14.4101 8.9774 14.7225C9.2898 15.0349 9.7966 15.0349 10.109 14.7225L15.7656 9.06569V9.06569C15.8028 9.02849 15.836 8.98749 15.8652 8.94369C15.8786 8.92349 15.888 8.90169 15.8994 8.88069C15.9128 8.85589 15.9278 8.83229 15.9386 8.80609C15.9498 8.77909 15.9562 8.75089 15.9644 8.72289C15.9708 8.70069 15.9794 8.67949 15.984 8.65669C15.9944 8.60489 16 8.55249 16 8.49989V8.49989C16 8.49929 15.9998 8.49889 15.9998 8.49829C15.9998 8.44649 15.9944 8.39449 15.9842 8.34349C15.9794 8.31929 15.9704 8.29709 15.9634 8.27369C15.9556 8.24709 15.9494 8.22009 15.9388 8.19429C15.9272 8.16649 15.9116 8.14129 15.8972 8.11509C15.8864 8.09549 15.878 8.07549 15.8654 8.05669C15.836 8.01249 15.8026 7.97129 15.7652 7.93389L10.1088 2.27769C9.7964 1.96529 9.2898 1.96529 8.9774 2.27749C8.665 2.58989 8.665 3.09669 8.9774 3.40909L13.2686 7.69989L0.8 7.69989C0.3582 7.69989 3.57628e-07 8.05809 3.57628e-07 8.49989C3.57628e-07 8.94169 0.3582 9.29989 0.8 9.29989Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--### PROJECTS SECTION ###-->
+    <section class="projects-section news">
+      <div class="container">
+        <!--# Section Heading #-->
+        <div class="section-heading">
+          <h2>Open source projects</h2>
+        </div>
+        <div class="row">
+          <!--# Project Box #-->
+          <div class="col-md-4 col-sm-6 col-12">
+            <a href="#" class="project-box">
+              <div class="image">
+                <img
+                  src="images/project-image1.png"
+                  alt="Project Image"
+                  class="img-responsive"
+                />
+              </div>
+
+              <div class="title">Myspace Layouts The Missing Element</div>
+            </a>
+          </div>
+
+          <!--# Project Box #-->
+          <div class="col-md-4 col-sm-6 col-12">
+            <a href="#" class="project-box">
+              <div class="image">
+                <img
+                  src="images/project-image2.png"
+                  alt="Project Image"
+                  class="img-responsive"
+                />
+              </div>
+
+              <div class="title">Becoming A Dvd Repair Expert Online</div>
+            </a>
+          </div>
+
+          <!--# Project Box #-->
+          <div class="col-md-4 col-sm-6 col-12">
+            <a href="#" class="project-box">
+              <div class="image">
+                <img
+                  src="images/project-image3.png"
+                  alt="Project Image"
+                  class="img-responsive"
+                />
+              </div>
+
+              <div class="title">How Plasma Tvs And Lcd Tvs Differ</div>
+            </a>
+          </div>
+        </div>
+
+        <!--# Button Wrapper #-->
+        <div class="button-wrapper">
+          <a href="#" class="btn dark">
+            <span>Show all</span>
+            <svg
+              width="16"
+              height="17"
+              viewBox="0 0 16 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.8 9.29989L13.2688 9.29989L8.9776 13.5911C8.6652 13.9035 8.6652 14.4101 8.9774 14.7225C9.2898 15.0349 9.7966 15.0349 10.109 14.7225L15.7656 9.06569V9.06569C15.8028 9.02849 15.836 8.98749 15.8652 8.94369C15.8786 8.92349 15.888 8.90169 15.8994 8.88069C15.9128 8.85589 15.9278 8.83229 15.9386 8.80609C15.9498 8.77909 15.9562 8.75089 15.9644 8.72289C15.9708 8.70069 15.9794 8.67949 15.984 8.65669C15.9944 8.60489 16 8.55249 16 8.49989V8.49989C16 8.49929 15.9998 8.49889 15.9998 8.49829C15.9998 8.44649 15.9944 8.39449 15.9842 8.34349C15.9794 8.31929 15.9704 8.29709 15.9634 8.27369C15.9556 8.24709 15.9494 8.22009 15.9388 8.19429C15.9272 8.16649 15.9116 8.14129 15.8972 8.11509C15.8864 8.09549 15.878 8.07549 15.8654 8.05669C15.836 8.01249 15.8026 7.97129 15.7652 7.93389L10.1088 2.27769C9.7964 1.96529 9.2898 1.96529 8.9774 2.27749C8.665 2.58989 8.665 3.09669 8.9774 3.40909L13.2686 7.69989L0.8 7.69989C0.3582 7.69989 3.57628e-07 8.05809 3.57628e-07 8.49989C3.57628e-07 8.94169 0.3582 9.29989 0.8 9.29989Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--### FOOTER ###-->
+    <footer>
+      <div class="container">
+        <div class="row cta-row">
+          <!--# Section Heading #-->
+          <div class="section-heading">
+            <h3>Have questions in mind?</h3>
+          </div>
+
+          <!--# Section Text #-->
+          <div class="section-text">
+            <p>Let us help you!</p>
+          </div>
+
+          <!--# CTA Form #-->
+          <form action="#" class="cta-form">
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Your Email"
+              />
+              <input type="submit" class="btn yellow" value="Let's talk" />
+            </div>
+          </form>
+        </div>
+
+        <!--# Footer Bottom #-->
+        <div class="row footer-bottom">
+          <div class="footer-nav">
+            <div class="brand">
+              <img
+                src="images/logo.png"
+                alt="Brand Logo"
+                class="img-responsive"
+              />
+            </div>
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="copyright-social">
+            <div class="copyright-text">
+              <p>Copyright &copy; 2022 Tandembyte. All rights reserved.</p>
+            </div>
+            <ul class="social-icons">
+              <li>
+                <a href="#" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"
+      defer
+    ></script>
+    <script src="js/aos.js" defer></script>
+    <script src="js/custom.js" defer></script>
+  </body>
+</html>
